@@ -3,7 +3,8 @@ import jsonpickle
 import os
 from flask import Flask, request
 
-UPLOAD_FOLDER = 'C:/Users/DeLL/PycharmProjects/pythonProject'
+#UPLOAD_FOLDER = 'C:/Users/DeLL/PycharmProjects/chess-pgn-parser'
+UPLOAD_FOLDER = ''
 ALLOWED_EXTENSIONS = {'pgn'}
 
 
