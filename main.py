@@ -63,6 +63,7 @@ def pgnToFen():
 
             pgnDataJSON = jsonpickle.encode(pgnData)
 
+
         return pgnDataJSON
 
     else:
