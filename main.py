@@ -2,6 +2,7 @@ import chess.pgn
 import jsonpickle
 import os
 from flask import Flask, request
+from flask_cors import CORS
 
 #UPLOAD_FOLDER = 'C:/Users/DeLL/PycharmProjects/chess-pgn-parser'
 UPLOAD_FOLDER = ''
@@ -9,6 +10,7 @@ ALLOWED_EXTENSIONS = {'pgn'}
 
 
 app = Flask(__name__)
+CORS(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def allowed_file(filename):
